@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./images/bookmark.png" />
+    <!-- font awesome library -->
+    <link rel="stylesheet" href="./fontawesome/css/all.min.css" />
+    <!-- bootstrap main css -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <!-- main task css file -->
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>Bookmark</title>
+  </head>
+  <body>
+    <section>
+      <div class="over-lay">
+        <div class="container-fluid">
+          <div class="header text-center">
+            <h1>Bookmarker</h1>
+          </div>
+
+          <h2 class="text-center">
+            <i class="fa-solid fa-bookmark"></i>
+            <span>Bookmark your favorite sites</span>
+            <i class="fa-solid fa-bookmark"></i>
+          </h2>
+          <div class="form">
+            <div class="inputs d-md-flex d-lg-flex">
+              <div class="name col-md-6 col-lg-6 mt-3 pt-1">
+                <label for="websiteName"
+                  ><span><i class="fa-regular fa-pen-to-square"></i> </span> Add
+                  Website Name</label
+                >
+                <input
+                  id="websiteName"
+                  type="text"
+                  class="form-control my-1"
+                  placeholder="Enter Bookmark name"
+                />
+                <div
+                  id="nameAlert"
+                  class="error-message position-relative d-none"
+                >
+                  <i class="fa-solid fa-caret-up" style="color: #df0016"></i>
+                  <p class="alert alert-danger">
+                    name must be (3-9) Characters
+                  </p>
+                </div>
+              </div>
+              <div class="url col-md-6 col-lg-6 mt-3 pt-1">
+                <label for="websiteUrl"
+                  ><span><i class="fa-solid fa-link"></i></span> Add Website
+                  Url</label
+                >
+                <input
+                  id="websiteUrl"
+                  type="url"
+                  class="form-control my-1"
+                  placeholder="Enter Website URL"
+                />
+                <div
+                  id="urleAlert"
+                  class="error-message position-relative d-none"
+                >
+                  <i class="fa-solid fa-caret-up" style="color: #df0016"></i>
+                  <p class="alert alert-danger">Enter a valid URL</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="buttn">
+              <button disabled id="addBtn" class="btn addBtn">Add</button>
+            </div>
+
+            <div class="search m-auto">
+              <input
+                id="searchInput"
+                type="text"
+                class="form-control"
+                placeholder="search Website Name"
+              />
+            </div>
+          </div>
+          <!-- -----------------------  display data ------------------ -->
+          <div class="autputs">
+            <div class="container px-5 pt-5">
+              <div id="row" class="row text-center g-4"></div>
+            </div>
+          </div>
+          <!-- ------------------------------------------------------- -->
+        </div>
+      </div>
+    </section>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
